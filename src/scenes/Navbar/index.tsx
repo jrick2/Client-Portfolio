@@ -16,7 +16,7 @@ const Navbar = () => {
   const [selected, setSelected] = useState("home");
   const [isOpen, setIsOpen] = useState(false);
   const isNonMobileScreens = useMediaQuery("(min-width:1120px)");
-
+  const isNonSmallerScreen = useMediaQuery("(min-width:700px)");
   const { palette } = useTheme();
 
   const handleMenu = () => {
@@ -69,7 +69,7 @@ const Navbar = () => {
                 display: "flex",
                 position: "fixed",
                 right: 0,
-                top: 25,
+                top: isNonSmallerScreen ? "10%" : "15%",
                 bottom: 0,
                 flexDirection: "column",
                 justifyContent: "center",

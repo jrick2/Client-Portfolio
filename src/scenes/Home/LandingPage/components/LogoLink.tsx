@@ -1,16 +1,22 @@
 import FlexBetween from "@/components/Flexbetween";
 import Link from "@/components/LogoLink";
-import { Typography, useTheme } from "@mui/material";
+import { Typography, useMediaQuery, useTheme } from "@mui/material";
 
 const LogoLink = () => {
   const { palette } = useTheme();
+  const isNonMobileScreens = useMediaQuery("(min-width:1120px)");
+  const isNonSmallerScreen = useMediaQuery("(min-width:570px)");
 
   return (
     <>
       {/* To make it cleaner */}
       <Typography
         variant="h1"
-        sx={{ color: palette.primary[100], fontSize: "2rem", fontWeight: 500 }}
+        sx={{
+          color: palette.primary[100],
+          fontSize: isNonMobileScreens ? "2rem" : "1.7rem",
+          fontWeight: 500,
+        }}
       >
         Tech Stack
       </Typography>

@@ -55,7 +55,7 @@ const Contact = () => {
             <Box display="flex" flexDirection="column">
               <Typography
                 variant="h4"
-                sx={{ fontSize: "20px", fontWeight: "900" }}
+                sx={{ fontSize: "18px", fontWeight: "900" }}
               >
                 Mail
               </Typography>
@@ -76,7 +76,7 @@ const Contact = () => {
             <Box display="flex" flexDirection="row" gap={2}>
               <Typography
                 variant="h4"
-                sx={{ fontSize: "20px", fontWeight: "900" }}
+                sx={{ fontSize: "18px", fontWeight: "900" }}
               >
                 Location
               </Typography>

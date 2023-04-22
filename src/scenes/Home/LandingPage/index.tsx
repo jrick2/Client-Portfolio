@@ -3,7 +3,6 @@ import { Typography } from "@mui/material";
 import CodeIcon from "@mui/icons-material/Code";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import About from "./About";
 import FlexCenter from "@/components/FlexCenter";
 import FlexBetween from "@/components/Flexbetween";
 import LogoLink from "./components/LogoLink";
@@ -11,9 +10,15 @@ import LogoLink from "./components/LogoLink";
 const LandingPage = () => {
   const { palette } = useTheme();
   const isNonMobileScreens = useMediaQuery("(min-width:1120px)");
+  const isNonSmallerScreen = useMediaQuery("(min-width:570px)");
   return (
     <>
-      <FlexCenter id="home" flexDirection="column" width="100%" height="70%">
+      <FlexCenter
+        id="home"
+        flexDirection="column"
+        width="100%"
+        height={isNonSmallerScreen ? "70%" : "85%"}
+      >
         {/* Upper Haft */}
         {/* Title  */}
         <FlexCenter
@@ -21,12 +26,12 @@ const LandingPage = () => {
           width={isNonMobileScreens ? "60% " : "100%"}
           color={palette.primary[100]}
         >
-          <CodeIcon sx={{ fontSize: "6rem" }} />
+          <CodeIcon sx={{ fontSize: isNonMobileScreens ? "6rem" : "5rem" }} />
 
           <Typography
             variant="h1"
             sx={{
-              fontSize: isNonMobileScreens ? "3.4rem" : "2.7rem",
+              fontSize: isNonMobileScreens ? "2.5rem" : "2.2rem",
               fontWeight: 600,
               textAlign: "center",
             }}
@@ -36,7 +41,7 @@ const LandingPage = () => {
           <Typography
             variant="h1"
             sx={{
-              fontSize: isNonMobileScreens ? "4rem" : "3.5rem",
+              fontSize: isNonMobileScreens ? "2.5rem" : "2.2rem",
               color: palette.secondary[500],
               textAlign: "center",
             }}
@@ -74,7 +79,6 @@ const LandingPage = () => {
           </FlexBetween>
         )}
       </FlexCenter>
-      <About />
     </>
   );
 };
