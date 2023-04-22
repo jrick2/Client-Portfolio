@@ -7,7 +7,7 @@ effort to honing my skills and improving my efficiency. However,
 my journey towards success was not always smooth sailing. In my
 early years, I found myself stuck in a vicious cycle of wasting
 time and making little progress, which left me feeling unfulfilled
-and frustrated with my life. I recognized the need for change and
+and frustrated. I recognized the need for change and
 took inspiration from the words of a wise man who said, "1 Day or
 Day 1." These words resonated deeply with me, and I made a
 decision to take action and pursue a career in tech. It was a
@@ -72,7 +72,7 @@ const About = () => {
                 variant="h2"
                 sx={{ color: palette.secondary.dark, fontWeight: 600 }}
               >
-                A dedicated Developer Based on Laguna, Philippines
+                A dedicated Developer Based in Laguna, Philippines
               </Typography>
             </Box>
             <Typography sx={{ fontSize: "1rem", margin: "1rem" }}>
@@ -113,7 +113,7 @@ const About = () => {
               variant="h2"
               sx={{ color: palette.secondary.dark, fontWeight: 600 }}
             >
-              A dedicated Developer Based on Laguna, Philippines
+              A dedicated Developer Based in Laguna, Philippines
             </Typography>
             <Typography sx={{ fontSize: "1rem", margin: "1rem" }}>
               {upperContent}
