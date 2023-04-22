@@ -16,8 +16,7 @@
     "moduleResolution": "Node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noImplicitReturns": true,
-    "noImplicitAny": false,
+
     "noEmit": true,
     "jsx": "react-jsx",
     "types": ["vite/client"]
