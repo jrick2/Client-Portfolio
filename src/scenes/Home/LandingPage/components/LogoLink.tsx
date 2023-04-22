@@ -4,8 +4,7 @@ import { Typography, useMediaQuery, useTheme } from "@mui/material";
 
 const LogoLink = () => {
   const { palette } = useTheme();
-  const isNonMobileScreens = useMediaQuery("(min-width:1120px)");
-  const isNonSmallerScreen = useMediaQuery("(min-width:570px)");
+  const isNonSmallerScreen = useMediaQuery("(min-width:630px)");
 
   return (
     <>
@@ -14,7 +13,7 @@ const LogoLink = () => {
         variant="h1"
         sx={{
           color: palette.primary[100],
-          fontSize: isNonMobileScreens ? "2rem" : "1.7rem",
+          fontSize: isNonSmallerScreen ? "2rem" : "1.5rem",
           fontWeight: 500,
         }}
       >

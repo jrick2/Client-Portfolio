@@ -7,15 +7,15 @@ type Props = {
 };
 
 const Link = ({ logo, link, rgb }: Props) => {
-  const isNonMobileScreens = useMediaQuery("(min-width:1120px)");
+  const isNonMobileScreens = useMediaQuery("(min-width:630px)");
 
   return (
     <a href={link} target="_blank" rel="noreferrer">
       <img
         alt=""
         src={logo}
-        width={isNonMobileScreens ? "40" : "35"}
-        height={isNonMobileScreens ? "40" : "35"}
+        width={isNonMobileScreens ? "40" : "30"}
+        height={isNonMobileScreens ? "40" : "30"}
         style={{
           backgroundColor: rgb ? rgb : "",
           borderRadius: rgb ? rgb : "inherit",

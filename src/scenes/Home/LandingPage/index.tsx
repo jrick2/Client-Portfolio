@@ -10,7 +10,7 @@ import LogoLink from "./components/LogoLink";
 const LandingPage = () => {
   const { palette } = useTheme();
   const isNonMobileScreens = useMediaQuery("(min-width:1120px)");
-  const isNonSmallerScreen = useMediaQuery("(min-width:570px)");
+  const isNonSmallerScreen = useMediaQuery("(min-width:630px)");
   return (
     <>
       <FlexCenter
@@ -26,12 +26,12 @@ const LandingPage = () => {
           width={isNonMobileScreens ? "60% " : "100%"}
           color={palette.primary[100]}
         >
-          <CodeIcon sx={{ fontSize: isNonMobileScreens ? "6rem" : "5rem" }} />
+          <CodeIcon sx={{ fontSize: isNonSmallerScreen ? "6rem" : "4.7rem" }} />
 
           <Typography
             variant="h1"
             sx={{
-              fontSize: isNonMobileScreens ? "2.5rem" : "2.2rem",
+              fontSize: isNonSmallerScreen ? "2.5rem" : "1.5rem",
               fontWeight: 600,
               textAlign: "center",
             }}
@@ -41,7 +41,7 @@ const LandingPage = () => {
           <Typography
             variant="h1"
             sx={{
-              fontSize: isNonMobileScreens ? "2.5rem" : "2.2rem",
+              fontSize: isNonSmallerScreen ? "2.5rem" : "2rem",
               color: palette.secondary[500],
               textAlign: "center",
             }}

@@ -6,7 +6,7 @@ import EmailIcon from "@mui/icons-material/Email";
 import FlexBetween from "@/components/Flexbetween";
 const Contact = () => {
   const { palette } = useTheme();
-  const isNonMobileScreens = useMediaQuery("(min-width:550px)");
+  const isNonMobileScreens = useMediaQuery("(min-width:630px)");
   return (
     <FlexCenter
       className="contact"
@@ -78,7 +78,7 @@ const Contact = () => {
                 variant="h4"
                 sx={{ fontSize: "18px", fontWeight: "900" }}
               >
-                Location
+                Location :
               </Typography>
               <Typography variant="h4" sx={{ fontSize: "18px" }}>
                 Laguna, Philippines
@@ -94,9 +94,9 @@ const Contact = () => {
             <Box display="flex" flexDirection="row" gap={1}>
               <Typography
                 variant="h4"
-                sx={{ fontSize: "20px", fontWeight: "900" }}
+                sx={{ fontSize: "18px", fontWeight: "900" }}
               >
-                Mail
+                Mail :
               </Typography>
               <Typography variant="h4" sx={{ fontSize: "18px" }}>
                 abellerajoshrick@gmail.com

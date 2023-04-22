@@ -38,7 +38,17 @@ const Navbar = () => {
     >
       <FlexBetween>
         <Typography variant="h1" fontSize="25px" sx={{ fontWeight: "500" }}>
-          Code Abe
+          <a
+            href={`#home`}
+            onClick={() => setSelected("home")}
+            style={{
+              textDecoration: "inherit",
+              fontSize: "1.2rem",
+              color: selected === "home" ? "inherit" : palette.primary[700],
+            }}
+          >
+            Code Abe
+          </a>
         </Typography>
       </FlexBetween>
 
