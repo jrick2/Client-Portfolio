@@ -41,7 +41,7 @@ const BoxContent = ({
             <a href={website} target="_blank" rel="noreferrer">
               <img
                 alt=""
-                src={img}
+                src={`https://github.com/jrick2/Client-Portfolio/blob/main/src/assets/${img}?raw=true`}
                 style={{ width: "100%", borderRadius: "1rem" }}
               />
             </a>
@@ -117,7 +117,7 @@ const BoxContent = ({
             <a href={website} target="_blank" rel="noreferrer">
               <img
                 alt=""
-                src={img}
+                src={`https://github.com/jrick2/Client-Portfolio/blob/main/src/assets/${img}?raw=true`}
                 style={{ width: "100%", borderRadius: "1rem" }}
               />
             </a>

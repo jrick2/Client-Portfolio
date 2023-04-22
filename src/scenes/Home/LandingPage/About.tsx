@@ -47,7 +47,7 @@ const About = () => {
           >
             <img
               alt=""
-              src="./src/assets/images.jpg"
+              src="https://github.com/jrick2/Client-Portfolio/blob/main/src/assets/images.jpg?raw=true"
               style={{ width: "100%" }}
             />
             <Typography variant="h1" sx={{ fontWeight: "500" }}>
@@ -93,7 +93,7 @@ const About = () => {
           >
             <img
               alt=""
-              src="./src/assets/images.jpg"
+              src="https://github.com/jrick2/Client-Portfolio/blob/main/src/assets/images.jpg?raw=true"
               style={{ width: "100%" }}
             />
           </FlexCenter>

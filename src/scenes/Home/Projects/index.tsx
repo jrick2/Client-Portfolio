@@ -45,7 +45,7 @@ const Projects = () => {
             tech2="Recharts"
             tech3="Regression"
             github="https://github.com/jrick2/Finance-app-MERN"
-            img="./src/assets/img3.jpg"
+            img="img3.jpg"
           />
         </BoxShadow>
         <BoxShadow>
@@ -58,7 +58,7 @@ const Projects = () => {
             tech2="Redux Js"
             tech3="multer"
             github="https://github.com/jrick2/Mern-app-Blog-Post"
-            img="./src/assets/img2.jpg"
+            img="img2.jpg"
           />
         </BoxShadow>
         <BoxShadow>
@@ -71,7 +71,7 @@ const Projects = () => {
             tech2="JWT"
             tech3="router dom"
             github="https://github.com/jrick2/fullStack-subscription"
-            img="./src/assets/img.jpg"
+            img="img.jpg"
           />
         </BoxShadow>
       </Box>

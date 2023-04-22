@@ -69,7 +69,7 @@ const Navbar = () => {
                 display: "flex",
                 position: "fixed",
                 right: 0,
-                top: 0,
+                top: 25,
                 bottom: 0,
                 flexDirection: "column",
                 justifyContent: "center",
